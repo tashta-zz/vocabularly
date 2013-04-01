@@ -1,0 +1,1 @@
+var WordsCollection = Backbone.Collection.extend({});

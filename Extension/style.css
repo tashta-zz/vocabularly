@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Caviar Dreams;
+  src: url("http://vocabularly.herokuapp.com/CaviarDreams.ttf");
+}
+@font-face {
+  font-family: Symbola;
+  src: url("http://vocabularly.herokuapp.com/Symbola.ttf");
+}
+.vocabExtPopup {
+	padding: 0px 7px 5px 3px;
+	width: 170px;
+	height: 70px;
+	z-index: 10;
+	font-family: Caviar Dreams;
+	background-color: white;
+	border: 1px solid red;
+}
+.vocabExtPopup p {
+	margin: 0px;
+}
+.vocabExtCancel {
+	width: 20px;
+	float: right;
+	text-align: right;
+	cursor: pointer;
+	font-size: 15px;
+	color: red;
+	width: 167px;
+
+}
+.vocabExtWord {
+	width: 100%;
+	font-size: 15px;
+	padding: 0px 3px 0px 3px;
+}
+.vocabExtTrans {
+	font-size: 15px;
+	color: rgb(150, 150, 150);
+	padding: 0px 3px 3px 3px;
+}
+.vocabExtSpeak {
+	cursor: pointer;
+	color: rgb(150, 150, 150);
+	font-family: Symbola;
+	font-size: 0.8em;
+	padding-left: 5px;
+}

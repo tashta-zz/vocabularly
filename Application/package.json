@@ -1,0 +1,13 @@
+{
+  "name": "dictionalien",
+  "version": "0.0.1",
+  "dependencies": {
+  	"pg": "0.6.15",
+    "sequelize": "1.4.x",
+    "express": "3.0.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="clientStyle.css">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="underscore.js"></script>
+		<script type="text/javascript" src="backbone.js"></script>
+		<script type="text/javascript" src="requests.js"></script>
+		<script type="text/javascript" src="MainpageView.js"></script>
+		<script type="text/javascript" src="SignupFormView.js"></script>
+		<script type="text/javascript" src="LoginFormView.js"></script> 
+
+	</head>
+
+	<body>
+
+		<div class='registration'>
+
+			<span class='openForm openSignupForm'>Sign up</span>
+			<span class='openForm openLoginForm'>Log in</span>
+
+			<div class='registrationForm'>
+				<div class="instr">
+					<img class="instrImg" src="see_translation.png">
+					<img class="secondInstrImg instrImg" src="check_collection.png">
+					<img class="instrImg" src="practice_vocabulary.png">
+					<div class="instrExpl">1. Click on a new word to see its translation.</div>
+					<div class=" secondInstrExpl instrExpl">2. Check your words collection.</div>
+					<div class="instrExpl">3. Practice your vocabulary.</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+	 <script type="text/javascript">
+		new MainpageView({
+	      el: window.document.body,
+	    });
+	 </script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="clientStyle.css" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="requests.js"></script>
+		<script type="text/javascript" src="underscore.js"></script>
+		<script type="text/javascript" src="backbone.js"></script>
+		<script type="text/javascript" src="ProfileView.js"></script>
+
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+
+			$(function(){
+				getUserData(function(data){
+					data = JSON.parse(data);
+					var ProfileModel = Backbone.Model.extend({});
+					var profileModel = new ProfileModel();
+					_.extend(profileModel.attributes, data);
+					var profileView = new ProfileView( {model : profileModel} );
+					$('body').append( profileView.render() );
+				});
+			});
+
+		</script>
+
+	</body>
+
+</html>

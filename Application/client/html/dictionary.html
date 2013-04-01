@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="clientStyle.css" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="requests.js"></script>
+		<script type="text/javascript" src="underscore.js"></script>
+		<script type="text/javascript" src="backbone.js"></script>
+		<script type="text/javascript" src="WordsCollection.js"></script>
+		<script type="text/javascript" src="DictionaryView.js"></script>
+		<script type="text/javascript" src="DictionaryEntryView.js"></script>
+
+	</head>
+
+	<body>
+
+		<a class="logout" href="/logout">/Logout/</a>
+		<div class='nav'><a href="/profile">Profile</a></div>
+		<div class='nav'>Dictionary</div>
+		<div class='nav'><a href="/practice">Practice</a></div>
+
+		<script type="text/javascript">
+
+			$(function(){
+				getWords(function(data){
+					var userWords = new WordsCollection();
+					$('body').prepend('<span class="userName">' + data.username + '</span>');
+					if (data.userwords === "Your dictionary is empty."){
+						$('body').append('<div class="needMore">' + data.userwords + '</div>')
+					} else {
+						userWords.reset(data.userwords);
+						var dictionaryView = new DictionaryView({collection: userWords});
+						$('body').append(dictionaryView.render());
+					}
+				});
+			});
+
+		</script>
+		
+	</body>
+</html>

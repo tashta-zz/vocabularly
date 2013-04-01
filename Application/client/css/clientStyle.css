@@ -1,0 +1,182 @@
+/*  -------- For all or many pages --------  */
+
+@font-face {
+  font-family: Caviar Dreams;
+  src: url("CaviarDreams.ttf");
+}
+@font-face {
+  font-family: Symbola;
+  src: url("Symbola.ttf");
+}
+body {
+	font-family: Caviar Dreams;
+}
+.needMore {
+	color: rgb(150, 147, 147);
+	margin: 0 auto;
+	margin-top: 90px;
+	font-size: 3em;
+	text-align: center;
+}
+.userName {
+	margin-left: 15px;
+	font-size: 3em;
+	color: red;
+}
+.logout {
+	font-size: 0.8em;
+	color: black;
+}
+.nav {
+	margin-left: 25px;
+	margin-top: 20px;
+	font-weight: 1.5em;
+}
+.nav a {
+	color: black;
+}
+
+
+/*  -------- For main.html --------  */
+
+.registration {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 70%;
+	text-align: center;
+	min-width: 975px;
+}
+.openForm {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 1.5em;
+	padding: 10px;
+	color: red;
+}
+.registration form {
+	margin-top: 90px;
+}
+.instrImg {
+	width: 280px;
+	height: 250px;
+	margin-top: 70px;
+	border: 1px solid black;
+}
+.instrExpl {
+	float: left;
+	width: 285px;
+	height: 150px;
+	margin-top: 50px;
+	margin-left: 10px;
+	font-size: 1.5em;
+	color: rgb(150, 150, 150);
+	text-align: center;
+}
+.secondInstrImg {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.secondInstrExpl {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+label {
+	padding-left: 10px;
+}
+.error {
+	color: red;
+}
+.subBut {
+	background-color: red;
+	color: white;
+	height: 25px;
+	width: 80px;
+	border-radius: 5px;
+	margin-top: 15px;
+	font-size: 1em;
+	border-style: none ;
+	font-family: Caviar Dreams;
+}
+.loginForm {
+	padding-top: 30px;
+}
+
+
+/*  -------- For dictionary.html -------- */
+
+.allWords {
+	margin: 0 auto;
+	margin-top: -100px;
+	width: 500px;
+	text-align: center;
+	font-size: 1.6em;
+}
+td {
+	height: 40px;
+}
+.dictTrans {
+	color: rgb(150, 147, 147);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.speaker {
+	font-family: Symbola;
+	color: rgb(200, 200, 200);
+	cursor: pointer;
+	font-size: 0.7em;
+	padding-left: 10px;
+}
+.delete {
+	font-size: 0.5em;
+	color: rgb(200, 200, 200);
+	cursor: pointer;
+}
+
+
+/*  -------- For practice.html -------- */
+
+.pracWord {
+	margin: 0 auto;
+	margin-top: -40px;
+	padding-bottom: 40px;
+	font-size: 3.5em;
+	text-align: center;
+	color: red;
+}
+.testBox {
+	margin: 0 auto;
+	width: 880px;
+	min-width: 580px;
+}
+.variant {
+	background-color: rgb(233, 238, 238);
+	padding-top: 35px;
+	text-align: center;
+	margin: 20px;
+	display: inline;
+	float: left;
+	width: 400px;
+	height: 80px;
+	cursor: pointer;
+	font-size: 2em;
+}
+.right {
+	color: rgb(149, 253, 215);
+	padding-right: 15px;
+}
+.wrong {
+	color: red;
+}
+
+
+/*  -------- For profile.html --------  */
+
+.profileInfo {
+	margin: 0 auto;
+	font-size: 1.5em;
+	width: 500px;
+	text-align: center;
+}
+.profVal {
+	color: rgb(150, 150, 150);
+}

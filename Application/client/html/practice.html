@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="clientStyle.css" />
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="requests.js"></script>
+		<script type="text/javascript" src="underscore.js"></script>
+		<script type="text/javascript" src="backbone.js"></script>
+		<script type="text/javascript" src="WordsCollection.js"></script>
+		<script type="text/javascript" src="TestView.js"></script>
+		<script type="text/javascript" src="TestEntryView.js"></script>
+
+	</head>
+
+	<body>
+
+		<a class="logout" href="/logout">/Logout/</a>
+		<div class='nav'><a href="/profile">Profile</a></div>
+		<div class='nav'><a href="/dictionary">Dictionary</a></div>
+		<div class='nav'>Practice</div>
+
+		<script type="text/javascript">
+
+			$(function(){
+				getWords(function(data){
+					$('body').prepend('<span class="userName">' + data.username + '</span>');
+					if ( data.userwords === "Your dictionary is empty." || data.userwords.length < 15 ){
+						$('body').append('<div class="needMore">You need more words to practice.</div>')
+					} else {
+						var userWords = new WordsCollection();
+						userWords.reset(data.userwords);
+						var testView = new TestView( {collection : userWords} );
+						$('body').append( testView.render() );
+					}
+				});
+			});
+			
+		</script>
+
+	</body>
+
+</html>
