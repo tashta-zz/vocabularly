@@ -1,7 +1,7 @@
 vocabularly
 ===========
 
-https://chrome.google.com/webstore/detail/vocabularly/hiolpcahphjodlmllmabijdmnpcdmiko
+http://vocabularly.herokuapp.com
 
 Translation application that can help you to enlarge your vocabulary.
 It consist of three main parts:

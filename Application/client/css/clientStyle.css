@@ -50,16 +50,16 @@ body {
 	cursor: pointer;
 	text-decoration: underline;
 	font-size: 1.5em;
-	padding: 10px;
+	/*padding: 10px;*/
 	color: red;
 }
 .registration form {
-	margin-top: 90px;
+	margin-top: 40px;
 }
 .instrImg {
 	width: 280px;
 	height: 250px;
-	margin-top: 70px;
+	margin-top: 60px;
 	border: 1px solid black;
 }
 .instrExpl {
@@ -99,6 +99,13 @@ label {
 }
 .loginForm {
 	padding-top: 30px;
+}
+.description {
+	color: rgb(150, 150, 150);
+	line-height: 0.5em;
+}
+.description a {
+	color: rgb(150, 150, 150);
 }
 
 

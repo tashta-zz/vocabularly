@@ -205,7 +205,7 @@ exports.updateUserStat = function(usCookie, userword, isRight, date, callback){
 				curUser.best = track;
 			}
 		}
-		curUser.endTrack = date + 1 + '';
+		curUser.endTrack = date + 10 + '';
 		curUser.save().success(function(){
 			if (isRight === 'true'){
 				curUser.rightAnswers++;
