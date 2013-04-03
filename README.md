@@ -4,10 +4,12 @@ vocabularly
 http://vocabularly.herokuapp.com
 
 Vocabularly is a language learning application that can help you to expand your vocabulary.
+
 It consist of three main parts:
 - Google Chrome extension;
 - Server side (Node.js, Express, Postgres, Sequelize);
 - Client side (Backbone.js).
+
 I also used Google Translate API and Google TTS.
 
 Issues:
