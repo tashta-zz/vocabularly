@@ -3,7 +3,7 @@ vocabularly
 
 http://vocabularly.herokuapp.com
 
-Translation application that can help you to enlarge your vocabulary.
+Vocabularly is a language learning application that can help you to expand your vocabulary.
 It consist of three main parts:
 - Google Chrome extension;
 - Server side (Node.js, Express, Postgres, Sequelize);
